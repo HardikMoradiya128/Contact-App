@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightblue url(https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_1280.jpg) no-repeat center;
+    background-size: cover;
+    align-items: center;
+}
+
+.L_Card {
+    max-width: 30%;
+    min-height: 100vh;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.L_Card h4{
+    color: purple;
+    font-weight: 700;
+}
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+    color: rgba(0, 0, 0, 0.9) !important;
+}
