@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Loginpage.css';
+import './LoginPage.css';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import Button from '@mui/material/Button';
@@ -25,7 +25,7 @@ const validationSchema = yup.object({
 });
 
 
-function Loginpage() {
+function Login() {
   const navigate = useNavigate()
 
   const [login, setLogin] = useState({
@@ -142,4 +142,4 @@ function Loginpage() {
   )
 }
 
-export default Loginpage
+export default Login

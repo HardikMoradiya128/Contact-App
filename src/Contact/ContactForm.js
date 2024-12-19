@@ -1,15 +1,12 @@
 import React from 'react'
 import SignUp from './SignUp';
-import LoginPage from './Loginpage'
-import Contactlist from './Contactlist'
+import Login from './Login';
+import ContactList from './ContactList'
 
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link,
-  useNavigate,
-  useNavigation
+  Route
 } from "react-router-dom";
 import Protect from './Protect';
 
@@ -19,8 +16,8 @@ function ContactForm() {
     <Router>
       <Routes>
         <Route path="/" element={<SignUp />}> </Route>
-        <Route path="/Login" element={<LoginPage />}> </Route>
-        <Route path="/Contactlist" element={<Protect><Contactlist /></Protect>}> </Route>
+        <Route path="/Login" element={<Login />}> </Route>
+        <Route path="/Contactlist" element={<Protect><ContactList /></Protect>}> </Route>
       </Routes>
     </Router>
   )

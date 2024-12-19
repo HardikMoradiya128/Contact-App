@@ -36,7 +36,7 @@ const validationSchema = yup.object({
     .required('LastName is Required'),
 });
 
-function Contactlist() {
+function ContactList() {
   const [data, setData] = useState([])
   const [search, setSearch] = useState('')
 
@@ -58,7 +58,7 @@ function Contactlist() {
       })
       // console.log(res);
       setData(res.data.data)
-    } catch (error) {
+    } catch (error) {s
       console.log(error);
     }
   }
@@ -386,5 +386,5 @@ function Contactlist() {
   )
 }
 
-export default Contactlist
+export default ContactList
 

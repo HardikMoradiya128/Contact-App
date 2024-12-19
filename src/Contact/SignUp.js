@@ -31,7 +31,7 @@ const validationSchema = yup.object({
         .required('UserName is Required'),
     contact: yup.string()
         .min(10, 'Too Short!')
-        // .max(70, 'Too Long!')
+        .max(10, 'Too Long!')
         .required('Contact No is Required'),
     password: yup
         .string('Enter your password')
